@@ -1,0 +1,55 @@
+html {
+  background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6);
+}
+
+article{
+  margin-left: 5%;
+  display: grid;
+}
+
+main {
+  width: 60vw;
+  margin: 1% auto;
+  box-shadow: 2px 5px 10px 5px black;
+  background: rgba(169,169,169, 0.45);
+}
+
+h1 {
+  font-size: 32px;
+}
+
+#name {
+  grid-column-start: 1;
+  border-bottom: 1px solid black;
+}
+#picture {
+  grid-column-start: 2;
+  margin-top: 5%;
+}
+#education {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#skillsLeft {
+  grid-column: 1;
+  border-bottom: 1px solid black;
+}
+#skillsRight {
+  grid-column: 2;
+}
+#work {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#work ul li {
+  width: 70%;
+  margin-top: 3%;
+}
+#volunteerLeft {
+  grid-column: 1;
+  margin-bottom: 3%;
+}
+#volunteerRight {
+  grid-column: 2;
+  margin-bottom: 3%;
+}
