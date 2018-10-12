@@ -1,14 +1,14 @@
-html {
-  background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6) fixed;
-}
-
 article {
   margin: 10% 20%;
   display: grid;
   grid-template-areas:
-  'name ed '
-  'name ed ';
+  'name resume '
+  'name resume ';
   height: 55vh;
+}
+
+html {
+  background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6) fixed;
 }
 
 h1 {
@@ -20,6 +20,31 @@ img {
   width: 100%;
 }
 
+.skillLeft {
+  grid-area: b;
+}
+.skillRight {
+  grid-area: c;
+}
+.volLeft {
+  grid-area: e;
+}
+.volRight {
+  grid-area: f;
+}
+
+#ed {
+  margin: 0;
+  margin-top: 5%;
+  text-align: left;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+#education {
+  grid-area: a;
+}
+
 #name {
   grid-area: name;
   box-shadow: 10px -6px 5px 0px dimgray;
@@ -28,11 +53,20 @@ img {
   margin-left: 30%;
 }
 
-#education {
-  grid-area: ed;
+#resume {
+  grid-area: resume;
   width: 30vw;
   box-shadow: 10px -6px 5px 0px dimgray;
   background: rgba(211,211,211, 0.75);
+}
+
+#skills {
+  margin: 0;
+  margin-top: 5%;
+  text-align: left;
+  font-size: 24px;
+  text-decoration: underline;
+  grid-area: s;
 }
 
 #words {
@@ -48,23 +82,6 @@ img {
   'e f ';
 }
 
-#eddy {
-  margin: 0;
-  margin-top: 5%;
-  text-align: left;
-  font-size: 24px;
-  text-decoration: underline;
-}
-
-#skill {
-  margin: 0;
-  margin-top: 5%;
-  text-align: left;
-  font-size: 24px;
-  text-decoration: underline;
-  grid-area: s;
-}
-
 #vol {
   margin: 0;
   margin-top: 5%;
@@ -72,20 +89,4 @@ img {
   font-size: 24px;
   text-decoration: underline;
   grid-area: v;
-}
-
-#ed {
-  grid-area: a;
-}
-.SL {
-  grid-area: b;
-}
-.SR {
-  grid-area: c;
-}
-.VL {
-  grid-area: e;
-}
-.VR {
-  grid-area: f;
 }
