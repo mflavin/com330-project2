@@ -1,55 +1,91 @@
 html {
-  background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6);
+  background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6) fixed;
 }
 
-article{
-  margin-left: 5%;
+article {
+  margin: 10% 20%;
   display: grid;
-}
-
-main {
-  width: 60vw;
-  margin: 1% auto;
-  box-shadow: 2px 5px 10px 5px black;
-  background: rgba(169,169,169, 0.45);
+  grid-template-areas:
+  'name ed '
+  'name ed ';
+  height: 55vh;
 }
 
 h1 {
+  text-align: center;
   font-size: 32px;
 }
 
+img {
+  width: 100%;
+}
+
 #name {
-  grid-column-start: 1;
-  border-bottom: 1px solid black;
+  grid-area: name;
+  box-shadow: 10px -6px 5px 0px dimgray;
+  background: rgba(211,211,211, 0.75);
+  width: 15vw;
+  margin-left: 30%;
 }
-#picture {
-  grid-column-start: 2;
-  margin-top: 5%;
-}
+
 #education {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-area: ed;
+  width: 30vw;
+  box-shadow: 10px -6px 5px 0px dimgray;
+  background: rgba(211,211,211, 0.75);
 }
-#skillsLeft {
-  grid-column: 1;
-  border-bottom: 1px solid black;
+
+#words {
+  margin-left: 10%;
+  font-size: 18px;
+  display: grid;
+  line-height: 28px;
+  grid-template-areas:
+  'a a '
+  's s '
+  'b c '
+  'v v '
+  'e f ';
 }
-#skillsRight {
-  grid-column: 2;
+
+#eddy {
+  margin: 0;
+  margin-top: 5%;
+  text-align: left;
+  font-size: 24px;
+  text-decoration: underline;
 }
-#work {
-  grid-column-start: 1;
-  grid-column-end: 3;
+
+#skill {
+  margin: 0;
+  margin-top: 5%;
+  text-align: left;
+  font-size: 24px;
+  text-decoration: underline;
+  grid-area: s;
 }
-#work ul li {
-  width: 70%;
-  margin-top: 3%;
+
+#vol {
+  margin: 0;
+  margin-top: 5%;
+  text-align: left;
+  font-size: 24px;
+  text-decoration: underline;
+  grid-area: v;
 }
-#volunteerLeft {
-  grid-column: 1;
-  margin-bottom: 3%;
+
+#ed {
+  grid-area: a;
 }
-#volunteerRight {
-  grid-column: 2;
-  margin-bottom: 3%;
+.SL {
+  grid-area: b;
+}
+.SR {
+  grid-area: c;
+}
+.VL {
+  grid-area: e;
+}
+.VR {
+  grid-area: f;
 }
