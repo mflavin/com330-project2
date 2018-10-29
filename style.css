@@ -1,92 +1,56 @@
-article {
-  margin: 10% 20%;
-  display: grid;
-  grid-template-areas:
-  'name resume '
-  'name resume ';
-  height: 55vh;
-}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
 
 html {
-  background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6) fixed;
-}
-
-h1 {
-  text-align: center;
-  font-size: 32px;
+    background: linear-gradient(to bottom right, #006666, #669999, #40bf80, #40bf80, #f2ffe6) fixed;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  border-radius: 20px;
 }
 
-.skillLeft {
-  grid-area: b;
-}
-.skillRight {
-  grid-area: c;
-}
-.volLeft {
-  grid-area: e;
-}
-.volRight {
-  grid-area: f;
+#name h1 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-weight: bold;
 }
 
-#ed {
-  margin: 0;
-  margin-top: 5%;
-  text-align: left;
-  font-size: 24px;
-  text-decoration: underline;
+section {
+  background-color: #EEE;
+  border-radius: 20px;
+  margin: 5px;
+  height: 100vh;
 }
 
-#education {
-  grid-area: a;
+#aboutMe h1,
+#skills h1,
+#vol h1 {
+  font-weight: bold;
+  margin: 5px 0px 10px 40px;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
-#name {
-  grid-area: name;
-  box-shadow: 10px -6px 5px 0px dimgray;
-  background: rgba(211,211,211, 0.75);
-  width: 15vw;
-  margin-left: 30%;
+#aboutMe p,
+#skills ul,
+#vol ul {
+  color: #404040;
+  font-weight: lighter;
+  line-height: 32px;
+  margin-left: 80px;
+  margin-right: 50px;
 }
 
-#resume {
-  grid-area: resume;
-  width: 30vw;
-  box-shadow: 10px -6px 5px 0px dimgray;
-  background: rgba(211,211,211, 0.75);
-}
+@media screen and (min-width: 555px) {
 
-#skills {
-  margin: 0;
-  margin-top: 5%;
-  text-align: left;
-  font-size: 24px;
-  text-decoration: underline;
-  grid-area: s;
-}
-
-#words {
-  margin-left: 10%;
-  font-size: 18px;
-  display: grid;
-  line-height: 28px;
-  grid-template-areas:
-  'a a '
-  's s '
-  'b c '
-  'v v '
-  'e f ';
-}
-
-#vol {
-  margin: 0;
-  margin-top: 5%;
-  text-align: left;
-  font-size: 24px;
-  text-decoration: underline;
-  grid-area: v;
 }
