@@ -32,6 +32,10 @@ section {
   height: 100vh;
 }
 
+p {
+  margin-bottom: 32px;
+}
+
 #aboutMe h1,
 #skills h1,
 #vol h1 {
@@ -52,5 +56,75 @@ section {
 }
 
 @media screen and (min-width: 555px) {
+  main {
+    padding: 5px 0px;
+    display: grid;
+    grid-template-areas:
+    'name container ';
+  }
 
+  #container {
+    grid-area: container;
+    overflow: scroll;
+  }
+
+  #name {
+    grid-area: name;
+  }
+
+  #container,
+  #name {
+    height: 95vh;
+  }
+
+  #aboutMe,
+  #skills,
+  #vol {
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  main {
+    padding: 50px 0;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  #container,
+  #name {
+    height: 80vh;
+  }
+
+  #skills,
+  #vol {
+    display: grid;
+    grid-template-areas:
+    'skillHead skillHead'
+    'skillL skillR '
+    'hobbyL hobbyR ';
+  }
+
+  #about {
+    grid-area: about;
+  }
+
+  /* Change to classes from nth-child(n) */
+  #skills ul:nth-child(1) {
+    grid-area: skillHead;
+  }
+  #skills ul:nth-child(2) {
+    grid-area: skillL;
+  }
+  #skills ul:nth-child(3) {
+    grid-area: skillR;
+  }
+
+  #vol ul:nth-child(2) {
+    grid-area: hobbyL;
+  }
+  #vol ul:nth-child(3) {
+    grid-area: hobbyR;
+  }
 }
